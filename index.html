@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="font-helvetica">
+    <main class="bg-gradient-to-tr from-red-500 to-orange-300 h-screen flex">
+      <section class="bg-black h-96 w-56 flex m-auto rounded-2xl shadow-2xl">
+        <div id="calc" class="">
+          <div id="input-display" class="flex justify-center">
+            <span
+              class="w-5/6 bg-black mt-4 h-24 text-white text-right text-3xl appearance-none outline-none flex justify-end"
+            >
+              <p
+                id="input-field"
+                class="text-4xl font-extralight pt-12 font-letter"
+              >
+                0
+              </p>
+            </span>
+          </div>
+          <div
+            id="btns"
+            class="px-5 py-5 grid grid-rows-5 place-items-center gap-2"
+          >
+            <div
+              id="section1"
+              class="grid grid-cols-4 place-items-center gap-2"
+            >
+              <button
+                id="clear"
+                class="bg-gray-300 py-2 px-4 hover:bg-gray-100 w-10 h-10 rounded-full text-sm pl-3.5"
+              >
+                C
+              </button>
+              <button
+                id="plus-minus"
+                class="bg-gray-300 py-2 px-2 hover:bg-gray-100 w-10 h-10 rounded-full"
+              >
+                +/-
+              </button>
+              <button
+                id="procent"
+                class="bg-gray-300 py-2 px-3 hover:bg-gray-100 w-10 h-10 rounded-full"
+              >
+                %
+              </button>
+              <button
+                id="division"
+                class="bg-orange-500 py-2 px-4 text-white hover:bg-orange-300 w-10 h-10 rounded-full"
+              >
+                /
+              </button>
+            </div>
+            <div
+              id="section2"
+              class="grid grid-cols-4 place-items-center gap-2"
+            >
+              <button
+                id="seven"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                7
+              </button>
+              <button
+                id="eight"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                8
+              </button>
+              <button
+                id="nine"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                9
+              </button>
+              <button
+                id="multiply"
+                class="bg-orange-500 py-2 px-4 text-white hover:bg-orange-300 w-10 h-10 rounded-full text-sm pl-3.5"
+              >
+                &#10005;
+              </button>
+            </div>
+            <div
+              id="section3"
+              class="grid grid-cols-4 place-items-center gap-2"
+            >
+              <button
+                id="four"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                4
+              </button>
+              <button
+                id="five"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                5
+              </button>
+              <button
+                id="six"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                6
+              </button>
+              <button
+                id="minus"
+                class="bg-orange-500 py-2 px-4 text-white hover:bg-orange-300 w-10 h-10 rounded-full"
+              >
+                -
+              </button>
+            </div>
+            <div
+              id="section4"
+              class="grid grid-cols-4 place-items-center gap-2"
+            >
+              <button
+                id="one"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                1
+              </button>
+              <button
+                id="two"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                2
+              </button>
+              <button
+                id="three"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                3
+              </button>
+              <button
+                id="plus"
+                class="bg-orange-500 py-2 px-4 text-white hover:bg-orange-300 w-10 h-10 rounded-full pl-3.5"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="section5"
+              class="grid grid-cols-4 place-items-center place-items-start gap-2"
+            >
+              <button
+                id="zero"
+                class="col-span-2 bg-gray-500 py-2 pl-4 text-left text-white hover:bg-gray-300 w-[88px] h-10 rounded-full"
+              >
+                0 &nbsp; &nbsp;
+              </button>
+
+              <button
+                id="coma"
+                class="bg-gray-500 py-2 px-4 text-white hover:bg-gray-300 w-10 h-10 rounded-full"
+              >
+                .
+              </button>
+              <button
+                id="equal"
+                class="bg-orange-500 py-2 px-4 text-white hover:bg-orange-300 w-10 h-10 rounded-full pl-3.5"
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+    <script src="/math.js"></script>
+    <script src="/calculator.js"></script>
+  </body>
+</html>
